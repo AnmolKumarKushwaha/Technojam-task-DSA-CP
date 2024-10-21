@@ -1,1 +1,21 @@
+ public class Q2 {
+   public Q2() {
+   }
+
+   public static int climbStairs(int var0) {
+      int var1 = 0;
+      if (var0 != 0 && var0 != 1) {
+         var1 += climbStairs(var0 - 1) + 1;
+         return var1;
+      } else {
+         return var0;
+      }
+   }
+
+   public static void main(String[] var0) {
+      byte var1 = 3;
+      System.out.println(climbStairs(var1));
+   }
+}
+
 
